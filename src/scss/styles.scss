@@ -6,20 +6,19 @@
   border: 1px solid black;
 }
 .media-card {
-  width: 20rem;
+  width: 15rem;
 }
 .complex-img {
   width: 80%;
   height: 150px;
 }
 .seo-cir-img {
-  margin-left: 50px;
   width: 50px;
 }
 @media (min-width: 768px) {
   .complex-img {
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    height: 350px;
   }
   .seo-cir-img {
     margin-top: 25px;
@@ -49,4 +48,25 @@
     background-color: rgb(250, 215, 37);
     border: none;
   }
+}
+.card-img {
+  margin: auto;
+  width: 35%;
+}
+.social-icon {
+  margin-top: 50px;
+  width: 100%;
+}
+.feedback-row-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+  .feedback-row-item {
+    float: 0 0 auto;
+  }
+}
+.footer-input {
+  background-color: #f2f2f2;
 }
