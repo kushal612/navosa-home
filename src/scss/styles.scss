@@ -5,3 +5,48 @@
   width: 125px;
   border: 1px solid black;
 }
+.media-card {
+  width: 20rem;
+}
+.complex-img {
+  width: 80%;
+  height: 150px;
+}
+.seo-cir-img {
+  margin-left: 50px;
+  width: 50px;
+}
+@media (min-width: 768px) {
+  .complex-img {
+    width: 80%;
+    height: 250px;
+  }
+  .seo-cir-img {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 767px) {
+  .web-speed {
+    display: none;
+  }
+}
+
+.plans {
+  background-color: #f2f2f2;
+}
+
+.translate-card {
+  transition: transform 0.3s ease;
+}
+.translate-card:hover {
+  transform: scale(1.2);
+  background-color: rgb(111, 119, 241);
+  color: white;
+  .my-p {
+    color: white;
+  }
+  .yel-btn {
+    background-color: rgb(250, 215, 37);
+    border: none;
+  }
+}
