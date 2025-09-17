@@ -26,21 +26,21 @@
         </button>
         <div class="collapse navbar-collapse pr-5" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mx-5 mb-2 mb-lg-0 d-flex gap-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+            <li class="nav-item element">
+              <a class="nav-link element" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link element" href="#">Projects</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link element" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link element" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link element" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex gap-2" role="search">
@@ -57,11 +57,39 @@
         </div>
       </div>
     </nav>
-
-    <div class="container-fluid px-lg-5">
+    <!-- Hero Section -->
+    <!-- <div class="container-fluid px-lg-5">
       <div class="row align-items-center">
         <div class="col-lg-6 text-center order-md-last">
           <img src="./assets/hero-img.png" class="ms-2 h-75 w-75" />
+          <div class="our-creative-team">
+            <p class="mb-0 text-start team-text">Our Creative Team</p>
+            <div class="images">
+              <img
+                src="./assets/team-mem1.svg"
+                class="left-most"
+                style="width: 30px; height: 30px"
+              />
+              <img
+                src="./assets/team-mem2.svg"
+                class="right-most"
+                style="width: 30px; height: 30px"
+              />
+              <img
+                src="./assets/team-mem3.svg"
+                class="right-most"
+                style="width: 30px; height: 30px"
+              />
+              <img
+                src="./assets/team-mem1.svg"
+                style="width: 30px; height: 30px"
+              />
+              <img
+                src="./assets/team-mem.svg"
+                style="width: 30px; height: 30px"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-6 order-md-first">
@@ -96,10 +124,105 @@
           >
             Get Started
           </button>
-          <img class="ms-lg-5 mt-3 mt-md-0" src="./assets/Take a tour.png" />
+          <img class="ms-lg-5 mt-3 mt-md-0" src="./assets/Take a tour.svg" />
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <section class="hero-container container-fluid py-5">
+      <div
+        class="row row-cols-2 align-items-lg-center d-flex justify-content-lg-center"
+      >
+        <div class="col-12 col-lg-6 order-1 order-lg-0 g-4 hero-container-left">
+          <h1 class="text-center text-lg-start position-relative">
+            Increase your web traffic with our
+            <img
+              width="80px"
+              height="80px"
+              class="position-absolute expert-icon"
+              src="./assets/expert.svg"
+              alt=""
+            />
+          </h1>
+
+          <p class="text-center text-lg-start para-color1 para-responsive-size">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when It is a long .It is a long
+            established fact that a reader will be distracted by the readable
+            content of a is simply. It is a long established fact that a reader
+            will be distracted.
+          </p>
+          <div
+            class="button-box d-flex gap-4 justify-content-between justify-content-lg-start gap-lg-5"
+          >
+            <button
+              class="btn button-1 button-primary1 btn-warning"
+              type="submit"
+            >
+              Get Started
+            </button>
+            <img
+              class="take-a-tour"
+              height="50px"
+              src="./assets/Take a tour.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 order-0 order-lg-1 hero-container-right">
+          <div class="container d-flex position-relative">
+            <img
+              width="80%"
+              class="mx-auto"
+              src="./assets/hero-img.png"
+              alt=""
+            />
+            <div
+              class="creative-team-container p-2 position-absolute bottom-0 bg-white rounded-1"
+            >
+              <p class="font-size-20px">Our Creative Team</p>
+              <div class="creative-team-inner-container d-flex">
+                <img
+                  width="52px"
+                  height="52px"
+                  class="left-most"
+                  src="./assets/team-mem3.svg"
+                  alt=""
+                />
+                <img
+                  width="52px"
+                  height="52px"
+                  class=""
+                  src="./assets/team-mem1.svg"
+                  alt=""
+                />
+                <img
+                  width="52px"
+                  height="52px"
+                  class=""
+                  src="./assets/team-mem2.svg"
+                  alt=""
+                />
+                <img
+                  width="52px"
+                  height="52px"
+                  class=""
+                  src="./assets/team-mem3.svg"
+                  alt=""
+                />
+                <img
+                  width="52px"
+                  height="52px"
+                  class=""
+                  src="./assets/team-mem.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- social media managment -->
     <div class="container mt-5">
@@ -287,6 +410,7 @@
       </div>
     </section>
 
+    <!-- business grow -->
     <section>
       <div class="container py-3 py-md-5">
         <div
@@ -296,13 +420,13 @@
             class="col-md-4 col-lg-6 col-12 border-0 mt-4 mt-md-0 p-3 bg-white rounded shadow shadow-sm-none optimization-transition"
             style="width: 14rem"
           >
-            <div class="text-center">
+            <div class="text-center text-lg-start">
               <img
                 src="./assets/busn-grow.png"
                 class=""
                 style="width: 50px; height: 50px"
               />
-              <h5 class="card-title mt-5">Grow Your Business</h5>
+              <h5 class="card-title my-5">Grow Your Business</h5>
 
               <p class="card-text">
                 It is a long established fact that a reader will be distracted
@@ -316,13 +440,13 @@
             class="col-md-4 col-lg-6 col-12 border-0 mt-4 mt-md-0 p-3 bg-white rounded shadow shadow-sm-none optimization-transition"
             style="width: 14rem"
           >
-            <div class="text-center">
+            <div class="text-center text-lg-start">
               <img
                 src="./assets/qlt-lead.png"
                 class=""
                 style="width: 50px; height: 50px"
               />
-              <h5 class="card-title mt-5">Get Quality Leads</h5>
+              <h5 class="card-title my-5">Get Quality Leads</h5>
 
               <p class="card-text">
                 It is a long established fact that a reader will be distracted
@@ -336,13 +460,13 @@
             class="col-md-4 col-12 border-0 mt-4 mt-md-0 p-3 bg-white rounded shadow shadow-sm-none optimization-transition"
             style="width: 14rem"
           >
-            <div class="text-center">
+            <div class="text-center text-lg-start">
               <img
                 src="./assets/sales.png"
                 class=""
                 style="width: 50px; height: 50px"
               />
-              <h5 class="card-title mt-5">Drive More Sales</h5>
+              <h5 class="card-title my-5">Drive More Sales</h5>
 
               <p class="card-text">
                 It is a long established fact that a reader will be distracted
@@ -560,7 +684,7 @@
 
     <!-- website visit -->
     <div class="container">
-      <div class="row row-cols-1 row-cols-lg-2">
+      <div class="row row-cols-1 offset-lg-1 row-cols-lg-2">
         <div class="col align-self-center">
           <p class="speed-heading text-sm-start">
             Check Your Website <span style="color: #6f77f1">Speed</span>
@@ -839,7 +963,7 @@
         </div>
         <div class="d-flex justify-content-center my-4 feedback-row-item">
           <div
-            class="card py-4 d-flex border border-1 border-black gap-3 translate-card"
+            class="card py-4 d-flex border border-1 border-black gap-3"
             style="width: 350px"
           >
             <div
@@ -875,18 +999,10 @@
               Enter your email and get updated new products & news
             </p>
             <div
-              class="d-flex flex-column flex-md-row gap-2 justify-content-center pb-md-5"
+              class="d-flex flex-column flex-md-row gap-2 gap-lg-3 justify-content-lg-center gap-lg-0 pb-md-5 w-100"
             >
-              <input
-                class="border-1 rounded-1"
-                placeholder="Name"
-                class="w-100"
-              />
-              <input
-                class="border-1 rounded-1"
-                placeholder="Email"
-                class="w-100"
-              />
+              <input class="border-1 rounded-1 input" placeholder="Name" />
+              <input class="border-1 rounded-1 input" placeholder="Email" />
               <button class="btn subscribe rounded-2">Subscribe</button>
             </div>
           </div>
