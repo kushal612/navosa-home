@@ -51,10 +51,10 @@
 }
 .card-img {
   margin: auto;
-  width: 35%;
+  width: 45%;
 }
 .social-icon {
-  margin-top: 50px;
+  margin-top: 5px;
   width: 100%;
 }
 .feedback-row-items {
@@ -71,20 +71,6 @@
   background-color: #f2f2f2;
 }
 
-.achievments {
-  h2,
-  p {
-    left: 450px;
-    top: 5522px;
-
-    font-family: "Poppins";
-    font-style: normal;
-    text-align: center;
-    text-transform: capitalize;
-    color: #666565;
-  }
-}
-
 .seo-card {
   transition: transform 0.3s ease;
 }
@@ -93,4 +79,121 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   border-radius: 0.25rem;
+}
+.target-block {
+  margin-top: 5px;
+  transition: transform 0.1s ease;
+  &:hover {
+    transform: scale(1);
+    box-shadow: 0 10px 14px 2px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border-bottom: 2px solid #6f77f1;
+  }
+}
+.subscribe {
+  background-color: #6f77f1;
+  color: white;
+}
+.business-img {
+  background-image: url("./assets/bg-vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.business-block {
+  background-color: #f2f2f2;
+}
+.default-color {
+  color: #6f77f1;
+}
+.optimization-transition {
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.learn-more {
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+  background-color: #fad725;
+}
+
+.stats-section {
+  .brdr {
+    border: 0;
+    @media (min-width: 700px) {
+      border: $text-muted 1px solid;
+      border-radius: 1px;
+    }
+  }
+  .stat-box {
+    h2 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin: 0;
+      @media (max-width: 1000px) {
+        font-size: 2rem;
+      }
+      color: #666565;
+    }
+    p {
+      font-size: 1rem;
+      color: $text-muted;
+    }
+  }
+  .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0px 0px;
+    padding: 0;
+    &.red {
+      background-color: #eb5939;
+    }
+    &.green {
+      background-color: #32d748;
+    }
+    &.yellow {
+      background-color: #ffcd4b;
+    }
+  }
+}
+
+.internet-img {
+  max-width: 300px;
+}
+@media (min-width: 576px) {
+  .internet-img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .internet-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.speed-heading {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+.speed-caption {
+  color: #828282;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .speed-heading {
+    font-size: 35px;
+  }
+  .speed-caption {
+    font-size: 17px;
+  }
+}
+.submit-bottun {
+  border-radius: 2px;
+  background-color: #fad725;
 }
