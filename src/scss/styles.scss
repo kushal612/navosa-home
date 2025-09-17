@@ -70,3 +70,27 @@
 .footer-input {
   background-color: #f2f2f2;
 }
+
+.achievments {
+  h2,
+  p {
+    left: 450px;
+    top: 5522px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    color: #666565;
+  }
+}
+
+.seo-card {
+  transition: transform 0.3s ease;
+}
+.seo-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
