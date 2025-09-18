@@ -37,10 +37,10 @@
 }
 
 .translate-card {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 .translate-card:hover {
-  transform: scale(1.2);
+  transform: scale(1);
   background-color: rgb(111, 119, 241);
   color: white;
   .my-p {
@@ -110,15 +110,15 @@
   color: #6f77f1;
 }
 .optimization-transition {
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 .learn-more {
   border-radius: 2px;
   border: none;
-  padding: 5px;
+  padding: 15px;
   background-color: #fad725;
 }
 
@@ -207,7 +207,8 @@
 }
 @media (min-width: 992px) {
   .input {
-    width: 18%;
+    width: 20%;
+    padding: 10px;
   }
 }
 
@@ -335,4 +336,35 @@ nav {
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: 10px 20px;
+}
+@media screen and (width>=1820) {
+  .hero-container {
+    h1 {
+      text-align: start;
+    }
+  }
+  .media-card {
+    width: 15rem;
+  }
+  .input {
+    width: 25%;
+    padding: 18px;
+  }
+  .website-container {
+    .row {
+      .col {
+        .speed-heading {
+          width: 754px;
+          height: 65px;
+          left: 178px;
+          top: 5917px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 55px;
+          line-height: 65px;
+          color: #212528;
+        }
+      }
+    }
+  }
 }
