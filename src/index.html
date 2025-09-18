@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Navosa Home</title>
+    <title>nuvosa</title>
     <script type="module" src="./js/main.js"></script>
     <link rel="stylesheet" href="./scss/styles.scss" />
     <link
@@ -13,9 +13,10 @@
   </head>
 
   <body>
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand fs-3" href="#"
           >nuvosa <img src="./assets/red-point.png"
         /></a>
         <button
@@ -36,20 +37,20 @@
         >
           <ul class="navbar-nav ms-auto mx-5 mb-2 mb-lg-0 d-flex gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link fs-5" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link element" href="#">Projects</a>
+              <a class="nav-link fs-5" href="#">Projects</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link element" href="#">Blog</a>
+              <a class="nav-link fs-5" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link element" href="#">Pricing</a>
+              <a class="nav-link fs-5" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link element" href="#">Contact</a>
+              <a class="nav-link fs-5" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex gap-2" role="search">
@@ -66,78 +67,8 @@
         </div>
       </div>
     </nav>
+
     <!-- Hero Section -->
-    <!-- <div class="container-fluid px-lg-5">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center order-md-last">
-          <img src="./assets/hero-img.png" class="ms-2 h-75 w-75" />
-          <div class="our-creative-team">
-            <p class="mb-0 text-start team-text">Our Creative Team</p>
-            <div class="images">
-              <img
-                src="./assets/team-mem1.svg"
-                class="left-most"
-                style="width: 30px; height: 30px"
-              />
-              <img
-                src="./assets/team-mem2.svg"
-                class="right-most"
-                style="width: 30px; height: 30px"
-              />
-              <img
-                src="./assets/team-mem3.svg"
-                class="right-most"
-                style="width: 30px; height: 30px"
-              />
-              <img
-                src="./assets/team-mem1.svg"
-                style="width: 30px; height: 30px"
-              />
-              <img
-                src="./assets/team-mem.svg"
-                style="width: 30px; height: 30px"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 order-md-first">
-          <h1 class="display-4 fw-bold">
-            Increase your web<br />
-            traffic with our
-            <span class="d-inline-flex align-items-center">
-              <img
-                src="./assets/expert.png"
-                class="ms-2 img-fluid"
-                style="height: 1em"
-              />
-            </span>
-          </h1>
-
-          <p class="lead">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when It is a long .It is a long
-            established fact that a reader will be distracted by the readable
-            content of a is simply. It is a long established fact that a reader
-            will be distracted.
-          </p>
-
-          <button
-            class="btn btn-warning rounded-1 px-lg-3"
-            style="
-              width: 160px;
-              height: 50px;
-              font-size: 24px;
-              font-weight: 400;
-            "
-          >
-            Get Started
-          </button>
-          <img class="ms-lg-5 mt-3 mt-md-0" src="./assets/Take a tour.svg" />
-        </div>
-      </div>
-    </div> -->
-
     <section class="hero-container container py-5">
       <div
         class="row row-cols-2 align-items-lg-center d-flex justify-content-lg-center"
@@ -233,7 +164,7 @@
       </div>
     </section>
 
-    <!-- social media managment -->
+    <!-- social media management -->
     <div class="container mt-5 social-media-managment">
       <div
         class="row row-cols-3 d-flex flex-md-nowrap gap-xxl-5 gap-1 justify-content-center justify-content-around"
@@ -298,20 +229,20 @@
     </div>
 
     <!-- website optimize -->
-    <section class="py-3 py-md-5 container">
-      <h2>Optimising your <span class="text-primary">Website</span></h2>
-      <p class="text-secondary">
+    <section class="py-3 py-md-5 container-xxl-fluid px-xxl-5">
+      <h2 class="text-center">
+        Optimizing your <span class="text-primary">Website</span>
+      </h2>
+      <p class="text-secondary text-center mx-1">
         It is a long established fact that a reader will be distracted by the
         readable content of a page when It is a long .
       </p>
-      <div class="container mt-5">
+      <div class="container my-5">
         <div
-          class="row d-flex gap-1 text-center justify-content-center justify-content-lg-around"
+          class="row row-cols-lg-4 d-flex flex-lg-nowrap gap-1 text-center text-md-start justify-content-center justify-content-evenly"
         >
-          <div class="col-md-3 col-12 border-0" style="width: 20rem">
-            <div
-              class="target-block p-3 bg-white rounded shadow shadow-sm-none website-bg-img-1"
-            >
+          <div class="col-md-3 col-12 border-0 py-lg-2">
+            <div class="shadow-sm-none website-bg-img-1 target-block">
               <img
                 src="./assets/keyword.png"
                 class=""
@@ -326,10 +257,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-12 border-0" style="width: 20rem">
-            <div
-              class="target-block p-3 bg-white rounded shadow shadow-md-none website-bg-img-2"
-            >
+          <div class="col-md-3 col-12 border-0">
+            <div class="target-block shadow-md-none website-bg-img-2">
               <img
                 src="./assets/content.png"
                 class=""
@@ -344,10 +273,8 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-12 border-0" style="width: 20rem">
-            <div
-              class="target-block p-3 bg-white rounded shadow shadow-sm-none website-bg-img-3"
-            >
+          <div class="col-md-3 col-12 border-0">
+            <div class="target-block shadow-sm-none website-bg-img-3">
               <img
                 src="./assets/target.png"
                 class=""
@@ -363,9 +290,7 @@
           </div>
 
           <div class="col-md-3 col-12 border-0" style="width: 20rem">
-            <div
-              class="target-block p-3 bg-white rounded shadow shadow-sm-none website-bg-img-4"
-            >
+            <div class="target-block shadow-sm-none website-bg-img-4">
               <img
                 src="./assets/testing.png"
                 class=""
@@ -403,7 +328,9 @@
             reader will be distracted by the readable content of .
           </p>
           <div class="button-box offset-lg-5 d-flex gap-4">
-            <button class="learn-more" type="submit">Learn More</button>
+            <button class="btn btn-warning learn-more" type="submit">
+              Learn More
+            </button>
           </div>
         </div>
         <div class="col-12 col-lg-6 order-0 order-lg-1 special-container-right">
@@ -510,7 +437,7 @@
             style="width: 100%"
           />
           <div class="">
-            <p class="text-center fw-medium">See optimazadion</p>
+            <p class="text-center fw-medium">See optimization</p>
             <p class="text-center text-muted">
               Some example text some example text. John Doe is an architect and
               engineer
@@ -530,7 +457,7 @@
             style="width: 100%"
           />
           <div class="card-body">
-            <p class="text-center fw-medium">See optimazadion</p>
+            <p class="text-center fw-medium">See optimization</p>
             <p class="text-center text-muted">
               Some example text some example text. John Doe is an architect and
               engineer
@@ -552,7 +479,7 @@
             style="width: 100%; height: 115px"
           />
           <div class="card-body">
-            <p class="text-center fw-medium">See optimazadion</p>
+            <p class="text-center fw-medium">See optimization</p>
             <p class="text-center text-muted">
               Some example text some example text. John Doe is an architect and
               engineer
@@ -651,7 +578,7 @@
       </div>
     </section>
 
-    <!-- achievments -->
+    <!-- achievements -->
     <section class="stats-section py-md-5 py-0">
       <div class="container text-center">
         <div class="row justify-content-center">
@@ -703,7 +630,7 @@
             the readable content .It is a long established fact that a reader
             .It is a long.
           </p>
-          <div class="d-flex flex-column flex-lg-row input-block">
+          <div class="d-flex flex-column flex-lg-row input-block ms-md-2">
             <input
               type="text"
               placeholder="Web URL"
@@ -732,15 +659,13 @@
 
     <!-- Pricing section -->
     <section class="pricing-container container-fluid my-5 py-5">
-      <h2 class="text-center">Our Plans</h2>
+      <h2 class="text-center fs-1">Our Plans</h2>
       <p class="text-center">Choose the right SEO for you</p>
       <div
         class="row row-cols-3 mt-2 mt-md-3 mt-lg-4 g-lg-5 justify-content-center g-4"
       >
-        <div
-          class="col-12 col-md-4 col-lg-3 p-3 bg-white rounded shadow-sm-none"
-        >
-          <div class="card py-5 d-flex border-0 translate-card">
+        <div class="col-12 col-md-4 col-lg-3 p-3 bg-white rounded">
+          <div class="card py-5 d-flex border-0 shadow-sm translate-card">
             <div
               class="card-top gap-2 d-flex flex-column justify-content-center align-items-center justify-content-lg-start"
             >
@@ -752,7 +677,7 @@
             >
               <p class="card-text text-center">
                 408GB Bandwidth <br />
-                Business & Finance Analysing <br />
+                Business & Finance Analyzing <br />
                 24 Hour Support <br />
                 Customer Management
               </p>
@@ -760,10 +685,10 @@
             </div>
           </div>
         </div>
-        <div
-          class="col-12 col-md-4 col-lg-3 p-3 bg-white rounded shadow-sm-none"
-        >
-          <div class="card py-5 d-flex border-0 special-card translate-card">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div
+            class="card py-5 d-flex border-0 special-card translate-card shadow-sm"
+          >
             <div
               class="card-top d-flex flex-column justify-content-center align-items-center justify-content-lg-start"
             >
@@ -775,7 +700,7 @@
             >
               <p class="card-text text-center">
                 408GB Bandwidth <br />
-                Business & Finance Analysing <br />
+                Business & Finance Analyzing <br />
                 24 Hour Support <br />
                 Customer Management
               </p>
@@ -783,10 +708,8 @@
             </div>
           </div>
         </div>
-        <div
-          class="col-12 col-md-4 col-lg-3 p-3 bg-white rounded shadow-sm-none"
-        >
-          <div class="card py-5 d-flex border-0 translate-card">
+        <div class="col-12 col-md-4 col-lg-3 p-3 bg-white rounded">
+          <div class="card py-5 d-flex border-0 translate-card shadow-sm">
             <div
               class="card-top gap-1 d-flex flex-column justify-content-center align-items-center justify-content-lg-start"
             >
@@ -798,7 +721,7 @@
             >
               <p class="card-text text-center">
                 408GB Bandwidth <br />
-                Business & Finance Analysing<br />
+                Business & Finance Analyzing<br />
                 24 Hour Support <br />
                 Customer Management
               </p>
@@ -1183,6 +1106,7 @@
         </div>
       </div>
     </section> -->
+
     <!-- Footer input -->
     <section>
       <div class="container my-3">
@@ -1199,7 +1123,9 @@
             >
               <input class="border-1 rounded-1 input" placeholder="Name" />
               <input class="border-1 rounded-1 input" placeholder="Email" />
-              <button class="btn subscribe rounded-2">Subscribe</button>
+              <button class="border-0 px-md-3 subscribe rounded-2">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
   }
 }
 .media-card {
-  width: 15rem;
+  width: 18rem;
 }
 .complex-img {
   width: 80%;
@@ -36,9 +36,16 @@
   background-color: #f2f2f2;
 }
 
+.yel-btn {
+  background-color: white;
+}
+.my-p {
+  color: rgb(111, 119, 241);
+}
 .translate-card {
   transition: transform 0.1s ease;
 }
+
 .translate-card:hover {
   transform: scale(1);
   background-color: rgb(111, 119, 241);
@@ -49,6 +56,11 @@
   .yel-btn {
     background-color: rgb(250, 215, 37);
     border: none;
+  }
+  .card-body {
+    p {
+      color: white;
+    }
   }
 }
 .card-img {
@@ -83,11 +95,16 @@
   border-radius: 0.25rem;
 }
 .target-block {
+  padding: 10px;
   margin-top: 5px;
-  transition: transform 0.1s ease;
+  height: 250px;
+  margin-bottom: 5px;
+  // transition: transform 0.1s ease;
   &:hover {
-    transform: scale(1);
-    box-shadow: 0 10px 14px 2px rgba(0, 0, 0, 0.15);
+    // transform: scale(1);
+    // padding: 10px;
+
+    box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     background-color: #fff;
     border-radius: 0.25rem;
     border-bottom: 2px solid #6f77f1;
@@ -110,9 +127,9 @@
   color: #6f77f1;
 }
 .optimization-transition {
-  transition: transform 0.1s ease;
+  transition: transform 0.2s ease;
   &:hover {
-    transform: scale(1);
+    transform: scale(1.1);
   }
 }
 .learn-more {
@@ -202,6 +219,8 @@
   }
 }
 .submit-bottun {
+  width: 100%;
+  padding: 10px;
   border-radius: 2px;
   background-color: #fad725;
 }
@@ -240,6 +259,12 @@
 }
 
 @media screen and (min-width: 1300px) {
+  body {
+    background-image: url("../../src/assets/bg-img-body.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .container-fluid {
     padding-left: 10px;
     padding-right: 120px;
@@ -281,41 +306,11 @@
   }
 }
 
-nav {
-  .container {
-    .nav-links {
-      ul {
-        li {
-          a {
-            position: relative;
-            text-decoration: none;
-            color: black;
-            transition: color 0.3s ease;
-            &::after {
-              content: "";
-              position: absolute;
-              bottom: -5px;
-              left: 0;
-              width: 0%;
-              height: 2px;
-              background-color: #6f77f1;
-              transition: width 0.3s ease;
-            }
-            &:hover::after {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 @mixin background-img($img) {
   background: url(".././assets/#{$img}.png");
   background-repeat: no-repeat;
   background-size: 25%;
-  background-position: 180px 25px;
+  background-position: 185px 25px;
 }
 
 .website-bg-img-1 {
@@ -337,14 +332,14 @@ nav {
   background-size: 20%;
   background-position: 10px 20px;
 }
-@media screen and (width>=1820) {
+@media (width: 1820px) {
   .hero-container {
     h1 {
       text-align: start;
     }
   }
   .media-card {
-    width: 15rem;
+    width: 20rem;
   }
   .input {
     width: 25%;
@@ -365,6 +360,14 @@ nav {
           color: #212528;
         }
       }
+    }
+  }
+}
+
+.pricing-container {
+  .card-body {
+    p {
+      color: #828282;
     }
   }
 }
