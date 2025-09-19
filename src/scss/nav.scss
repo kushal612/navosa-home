@@ -11,7 +11,10 @@
     text-underline-offset: 5px;
   }
 }
-
+.lets-talk {
+  background-color: white;
+  border-width: 1px;
+}
 a {
   @media (min-width: 1000px) {
     font-size: 20px !important;
@@ -28,7 +31,7 @@ a {
 
   @media (min-width: 1000px) {
     width: 65px;
-    height: 65px;
+    height: 60px;
   }
 
   background-color: var.$search-btn-bg;

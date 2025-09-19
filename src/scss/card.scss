@@ -213,7 +213,7 @@
 
   &:hover {
     background: url("../assets/images/Mask\ group.png") no-repeat center;
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 
@@ -236,7 +236,6 @@
   align-items: center;
   flex-shrink: 0;
 
-  // padding: 0px 50px;
   img {
     max-width: 100px;
     height: auto;
