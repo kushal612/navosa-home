@@ -6,13 +6,8 @@
   padding-bottom: 3rem;
 
   .service-card {
-    transition: box-shadow 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 17px 33px -14px #02160512;
-
-    &:hover {
-      box-shadow: 0 12px 10px rgba(0, 0, 0, 0.12);
-    }
 
     .service-icon {
       width: 75px;
