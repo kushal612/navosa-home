@@ -1,0 +1,73 @@
+@use "var";
+
+.services-section {
+  background: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .service-card {
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 17px 33px -14px #02160512;
+
+    &:hover {
+      box-shadow: 0 12px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-icon {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+
+      @media (min-width: 1000px) {
+        width: 125px;
+        height: 125px;
+      }
+    }
+
+    .service-title {
+      font-size: 18px;
+
+      @media (min-width: 1000px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 1500px) {
+        font-size: 2.5rem;
+      }
+
+      line-height: 1.5;
+      align-self: center;
+    }
+
+    .service-desc {
+      font-size: 17px;
+
+      @media (max-width: 1000px) {
+        font-size: 14px;
+      }
+
+      color: var.$text-muted;
+    }
+
+    .arrow-icon {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 600;
+      user-select: none;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .service-card {
+      .service-title {
+        font-size: 1.1rem;
+      }
+
+      .service-icon {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

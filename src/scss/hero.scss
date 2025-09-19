@@ -1,0 +1,158 @@
+@use "var";
+
+.hero-section {
+  background: white;
+
+  @media (min-width: 1800px) {
+    background: url("../assets/images/Group\ 678.png") no-repeat center;
+  }
+
+  a {
+    @media (min-width: 1000px) {
+      font-size: 20px !important;
+    }
+
+    @media (min-width: 1500px) {
+      font-size: 24px !important;
+    }
+  }
+
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @media (min-width: 700px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 4.5rem;
+    }
+
+    @media (min-width: 1500px) {
+      font-size: 90px;
+    }
+
+    .expert-tag {
+      display: inline-block;
+
+      .expert-img {
+        height: 50px;
+        margin-top: -5px;
+
+        @media (min-width: 769px) {
+          height: 70px;
+        }
+
+        @media (min-width: 1200px) {
+          height: 90px;
+        }
+      }
+    }
+  }
+
+  p {
+    color: var.$text-muted;
+    font-size: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .btn-warning {
+    background-color: var.$yellow;
+    border-color: var.$yellow;
+    color: #000;
+
+    &:hover {
+      background-color: darken(var.$yellow, 10%);
+      border-color: darken(var.$yellow, 10%);
+    }
+  }
+
+  .tour-btn {
+    .tour-icon {
+      height: 50px;
+      margin-left: 15%;
+
+      @media (min-width: 768px) {
+        height: 65px;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #000;
+    }
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .creative-team-box {
+    background: rgba($color: #ffffff, $alpha: 0.8);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 1.5rem;
+    z-index: 3;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      bottom: 5%;
+      left: 6%;
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0.25rem;
+      font-size: 0.85rem;
+      color: #212528;
+    }
+
+    .team-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: -10px;
+      border: 1px solid #fff;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        z-index: 2;
+      }
+    }
+
+    .add-avatar {
+      background-color: #f0f0f0;
+      color: #000;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-section .hero-image {
+    margin-top: 30px;
+  }
+}
