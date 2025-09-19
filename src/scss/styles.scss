@@ -1,17 +1,8 @@
-// Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
 
-.search-input {
-  width: 125px;
-  border: 1px solid black;
-}
+@import ".././scss/custom-scss/navbar.scss";
+@import ".././scss/custom-scss/hero.scss";
 
-.hero-container {
-  .expert-icon {
-    margin-left: 4px;
-    bottom: -24px;
-  }
-}
 .media-card {
   width: 18rem;
 }
@@ -255,20 +246,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .hero-container {
-    .creative-team-container {
-      right: 245px;
-    }
-    .hero-container-left {
-      margin-right: -45px;
-    }
-    .hero-container-right {
-      margin-right: -90px;
-    }
-  }
-}
-
 @media screen and (min-width: 1300px) {
   body {
     background-image: url("../../src/assets/bg-img-body.png");
@@ -279,29 +256,6 @@
   .container-fluid {
     padding-left: 35px;
     padding-right: 0px;
-  }
-
-  .hero-container {
-    .expert-icon {
-      width: 120px;
-      height: auto;
-      bottom: 0;
-      margin-left: 12px;
-    }
-  }
-  .hero-container {
-    .hero-container-left {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    h1 {
-      font-size: 70px;
-      font-weight: 600;
-    }
-    .creative-team-container {
-      right: 400px;
-    }
   }
 
   .heading-responsive-size {
@@ -344,11 +298,6 @@
   background-position: 10px 20px;
 }
 @media (width: 1820px) {
-  .hero-container {
-    h1 {
-      text-align: start;
-    }
-  }
   .media-card {
     width: 20rem;
   }
