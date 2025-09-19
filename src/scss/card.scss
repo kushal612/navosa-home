@@ -1,0 +1,293 @@
+@use "var";
+
+.card-section {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.icon-card {
+  padding: 10px 30px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 34px 50px -17px #0216051a;
+  }
+
+  .btn-warning {
+    background-color: var.$yellow;
+    border-color: #fad725;
+    color: #000;
+
+    &:hover {
+      background-color: darken(var.$yellow, 10%);
+      border-color: darken(var.$yellow, 10%);
+    }
+  }
+}
+
+.highlighted-card {
+  padding: 20px 10px;
+  background: url("../assets/images/Mask group.png") no-repeat center #6c76ff;
+  transform: scale(1.05);
+
+  .top-title {
+    font-size: 20px;
+    color: white;
+  }
+
+  .feature-title {
+    color: white;
+  }
+
+  .feature-description {
+    color: white;
+  }
+
+  a {
+    background: #fad725;
+    border: none;
+  }
+
+  .feature-title {
+    font-size: 48px;
+
+    @media (max-width: 1000px) {
+      font-size: 24px;
+    }
+
+    font-weight: 500;
+  }
+
+  .feature-description {
+    font-size: 17px;
+
+    @media (max-width: 1000px) {
+      font-size: 15px;
+    }
+
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+.plan-card {
+  padding: 20px 10px;
+  transition: transform 0.6s ease;
+  background: white;
+
+  @media (min-width: 700px) {
+    padding: 40px 20px;
+  }
+
+  .top-title {
+    font-size: 20px;
+    color: #6f77f1;
+  }
+
+  &:hover {
+    background: url("../assets/images/Mask group.png") no-repeat center #6c76ff;
+    transform: scale(1.05);
+
+    .top-title {
+      color: white;
+    }
+
+    .feature-title {
+      color: white;
+    }
+
+    .feature-description {
+      color: white;
+    }
+
+    a {
+      background: #fad725;
+      border: none;
+    }
+  }
+
+  .feature-title {
+    font-size: 48px;
+
+    @media (max-width: 1000px) {
+      font-size: 24px;
+    }
+
+    font-weight: 500;
+    color: #333;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .feature-description {
+    font-size: 17px;
+
+    @media (max-width: 1000px) {
+      font-size: 15px;
+    }
+
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: var.$text-muted;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.img-container {
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  margin: 20px 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: 550px) {
+      width: 75%;
+    }
+  }
+}
+
+.icon-container {
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  margin: 20px 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: 550px) {
+      width: 75px;
+    }
+  }
+
+  .icon {
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: 1000px) {
+      width: 60px;
+    }
+  }
+
+  .bg-img {
+    @media (max-width: 1500px) {
+      display: none;
+    }
+  }
+}
+
+.feature-title {
+  font-size: 24px;
+
+  @media (max-width: 1000px) {
+    font-size: 18px;
+  }
+
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 17px;
+
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+
+  color: var.$text-muted;
+}
+
+.feature-card-high {
+  background: url("../assets/images/Mask\ group.png") no-repeat center;
+
+  &:hover {
+    background: url("../assets/images/Mask\ group.png") no-repeat center;
+    transform: scale(1.1);
+  }
+}
+
+.marketing-card {
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 5px 25px 37px 0px #0216050f;
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+}
+
+.icon-wrapper {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  // padding: 0px 50px;
+  img {
+    max-width: 100px;
+    height: auto;
+
+    @media (max-width: 1000px) {
+      width: 75px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+}
+
+.team-card {
+  padding: 10%;
+  transition: transform 0.3s ease;
+  border: 1px solid #efefef;
+
+  &:hover {
+    border: 0;
+    box-shadow: 0px 34px 50px -17px #0216051a;
+
+    .feature-title {
+      color: #6f77f1;
+    }
+
+    .social-icon:hover {
+      filter: brightness(0) saturate(100%) invert(53%) sepia(59%)
+        saturate(4851%) hue-rotate(223deg) brightness(100%) contrast(95%);
+    }
+  }
+
+  .feature-title {
+    font-size: 22px;
+
+    @media (max-width: 1000px) {
+      font-size: 16px;
+    }
+
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #a3a2a2;
+  }
+}

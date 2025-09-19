@@ -1,0 +1,59 @@
+@use "var";
+
+.ad-section {
+  background: url("../assets/images/Group\ 676.png") center/cover no-repeat;
+
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding: 3rem;
+
+    @media (max-width: 1000px) {
+      padding: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @media (max-width: 700px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 700px) and (max-width: 1000px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 20px;
+
+    @media (max-width: 700px) {
+      font-size: 15px;
+    }
+
+    color: #828282;
+    margin-bottom: 3rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+  }
+
+  a {
+    @media (min-width: 1000px) {
+      font-size: 20px !important;
+    }
+
+    @media (min-width: 1500px) {
+      font-size: 24px !important;
+    }
+  }
+}

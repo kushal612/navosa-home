@@ -1,0 +1,133 @@
+@use "var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-font-size {
+  font-size: 1rem;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+@media (min-width: 1800px) {
+  .container {
+    width: 1650px !important;
+    max-width: 1650px !important;
+  }
+
+  .optimise-bg {
+    background: url("../assets/images/Group\ 680\ \(2\).png") no-repeat center;
+  }
+
+  .icon-bg {
+    background: url("../assets/images/0.png") no-repeat center;
+  }
+
+  .seo-bg {
+    background: url("../assets/images/Group\ 680.png") no-repeat;
+  }
+
+  .stats-bg {
+    background: url("../assets/images/speed.png") no-repeat center;
+  }
+
+  .plan-bg {
+    background: url("../assets/images/Group\ 681.png") no-repeat center;
+  }
+
+  .team-bg {
+    background: url("../assets/images/Group\ 679\ copy.png") no-repeat center;
+  }
+
+  .client-bg {
+    background: url("../assets/images/Group\ 680\ \(1\).png") no-repeat center;
+  }
+}
+
+.text-bluish {
+  color: #6f77f1 !important;
+}
+
+.all-btn {
+  background-color: #fad725;
+}
+
+.blue-btn {
+  background-color: #6f77f1;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #212528;
+  margin-bottom: 1rem;
+
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1500px) {
+    font-size: 55px;
+  }
+}
+
+.section-subtitle {
+  font-size: 18px;
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
+
+  font-weight: 400;
+  color: var.$text-muted;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  padding: 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 10px 14px 2px #0e113c08;
+    border-bottom: #717ae0 4px solid;
+  }
+}
+
+.custom-left-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.btn-warning {
+  background: #fad725 !important;
+  color: #000;
+
+  &:hover {
+    background-color: darken(var.$yellow, 10%) !important;
+    border-color: darken(var.$yellow, 10%) !important;
+  }
+}
+
+.btn-primary {
+  background: #6f77f1 !important;
+
+  @media (max-width: 1000px) {
+    font-size: 16px !important;
+  }
+}
