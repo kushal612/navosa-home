@@ -1,0 +1,55 @@
+@use "var";
+
+.stats-section {
+  .brdr {
+    border: 0;
+
+    @media (min-width: 700px) {
+      border: lightgray 1px solid;
+      border-radius: 1px;
+    }
+  }
+
+  .stat-box {
+    h2 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin: 0;
+
+      @media (max-width: 1000px) {
+        font-size: 2rem;
+      }
+
+      color: #666565;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var.$text-muted;
+
+      @media (min-width: 1400px) {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0px 0px;
+    padding: 0;
+
+    &.red {
+      background-color: #eb5939;
+    }
+
+    &.green {
+      background-color: #32d748;
+    }
+
+    &.yellow {
+      background-color: #ffcd4b;
+    }
+  }
+}
