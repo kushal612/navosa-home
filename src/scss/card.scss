@@ -121,29 +121,28 @@
     font-size: 20px;
     color: #6f77f1;
   }
+  // &:hover {
+  //   background: url("../assets/images/bg/Mask\ group.png") no-repeat center
+  //     #6c76ff;
+  //   transform: scale(1.05);
 
-  &:hover {
-    background: url("../assets/images/bg/Mask\ group.png") no-repeat center
-      #6c76ff;
-    transform: scale(1.05);
+  //   .top-title {
+  //     color: white;
+  //   }
 
-    .top-title {
-      color: white;
-    }
+  //   .feature-title {
+  //     color: white;
+  //   }
 
-    .feature-title {
-      color: white;
-    }
+  //   .feature-description {
+  //     color: white;
+  //   }
 
-    .feature-description {
-      color: white;
-    }
-
-    a {
-      background: #fad725;
-      border: none;
-    }
-  }
+  //   a {
+  //     background: #fad725;
+  //     border: none;
+  //   }
+  //}
 
   .feature-title {
     font-size: 48px;
@@ -155,9 +154,9 @@
     font-weight: 500;
     color: #333;
 
-    &:hover {
-      color: white;
-    }
+    // &:hover {
+    //   color: white;
+    // }
   }
 
   .feature-description {
@@ -171,9 +170,9 @@
     margin-bottom: 10px;
     color: var.$text-muted;
 
-    &:hover {
-      color: white;
-    }
+    // &:hover {
+    //   color: white;
+    // }
   }
 }
 
