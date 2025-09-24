@@ -6,12 +6,48 @@
   padding-bottom: 80px;
 }
 
+.feature-card {
+  padding: 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 10px 14px 2px #0e113c08;
+    border-bottom: #717ae0 4px solid;
+    margin-bottom: -4px;
+    background: white;
+  }
+}
+
+@media (min-width: 1800px) {
+  .feature-title {
+    position: relative;
+  }
+
+  .feature-title sup {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    font-size: 16px;
+  }
+}
+
 .icon-card {
-  padding: 10px 30px;
+  padding: 16px 30px;
   transition: transform 0.3s ease;
 
   &:hover {
     box-shadow: 0px 34px 50px -17px #0216051a;
+  }
+  .feature-title {
+    font-size: 20px;
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
+
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
   }
 
   .btn-warning {
@@ -28,7 +64,8 @@
 
 .highlighted-card {
   padding: 20px 10px;
-  background: url("../assets/images/Mask group.png") no-repeat center #6c76ff;
+  background: url("../assets/images/bg/Mask\ group.png") no-repeat center
+    #6c76ff;
   transform: scale(1.05);
 
   .top-title {
@@ -86,7 +123,8 @@
   }
 
   &:hover {
-    background: url("../assets/images/Mask group.png") no-repeat center #6c76ff;
+    background: url("../assets/images/bg/Mask\ group.png") no-repeat center
+      #6c76ff;
     transform: scale(1.05);
 
     .top-title {
@@ -180,7 +218,7 @@
   }
 
   .bg-img {
-    @media (max-width: 1440px) {
+    @media (max-width: 1500px) {
       display: none;
     }
   }
@@ -206,15 +244,6 @@
   }
 
   color: var.$text-muted;
-}
-
-.feature-card-high {
-  background: url("../assets/images/Mask\ group.png") no-repeat center;
-
-  &:hover {
-    background: url("../assets/images/Mask\ group.png") no-repeat center;
-    transform: scale(1);
-  }
 }
 
 .marketing-card {

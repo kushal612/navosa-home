@@ -17,8 +17,36 @@
 
 @media (min-width: 1800px) {
   .container {
-    width: 1650px !important;
-    max-width: 1650px !important;
+    width: 1690px !important;
+    max-width: 1690px !important;
+  }
+
+  .optimise-bg {
+    background: url("../assets/images/bg/optimise-bg.png") no-repeat center;
+  }
+
+  .icon-bg {
+    background: url("../assets/images/bg/icon-bg.png") no-repeat center;
+  }
+
+  .seo-bg {
+    background: url("../assets/images/bg/seo-bg.png") no-repeat;
+  }
+
+  .stats-bg {
+    background: url("../assets/images/bg/speed.png") no-repeat center;
+  }
+
+  .plan-bg {
+    background: url("../assets/images/bg/plan-bg.png") no-repeat center;
+  }
+
+  .team-bg {
+    background: url("../assets/images/bg/team-bg.png") no-repeat;
+  }
+
+  .client-bg {
+    background: url("../assets/images/bg/client-bg.png") no-repeat center;
   }
 }
 
@@ -54,10 +82,10 @@
 }
 
 .section-subtitle {
-  font-size: 18px;
+  font-size: 15px;
 
-  @media (max-width: 700px) {
-    font-size: 15px;
+  @media (min-width: 700px) {
+    font-size: 18px;
   }
 
   font-weight: 400;
@@ -65,14 +93,16 @@
   margin-bottom: 3rem;
 }
 
-.feature-card {
-  padding: 20px;
-  transition: transform 0.3s ease;
+.section-subtitl {
+  font-size: 15px;
 
-  &:hover {
-    box-shadow: 0px 10px 14px 2px #0e113c08;
-    border-bottom: #717ae0 4px solid;
+  @media (min-width: 700px) {
+    font-size: 20px;
   }
+
+  font-weight: 400;
+  color: var.$text-muted;
+  margin-bottom: 3rem;
 }
 
 .custom-left-img {
@@ -101,5 +131,109 @@
 
   @media (max-width: 1000px) {
     font-size: 16px !important;
+  }
+}
+
+.p-693 {
+  max-width: 693px;
+}
+
+.p-827 {
+  max-width: 827px;
+}
+
+.p-900 {
+  max-width: 900px;
+}
+
+.p-400 {
+  max-width: 400px;
+}
+
+.p-413 {
+  max-width: 413px !important;
+}
+
+.ip {
+  max-width: 300px;
+}
+
+.ip::placeholder {
+  color: #b6b6b6 !important;
+}
+
+#customToast.toast-animated {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 0;
+  animation: slideInUp 0.5s ease-out forwards, stayMid 2s ease-in 0.5s forwards,
+    slideOutUp 0.5s ease-in 2.5s forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes stayMid {
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutUp {
+  to {
+    bottom: -30px;
+    opacity: 0;
+  }
+}
+
+#customToast.toast-static {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 1;
+}
+
+.sm-font {
+  font-size: 14px !important;
+}
+
+.custom-fs {
+  font-size: 16px !important;
+  @media (min-width: 1000px) {
+    font-size: 20px !important;
+  }
+}
+
+.bt-p {
+  padding: 12px 24px !important;
+}
+
+.sect-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #212528;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1500px) {
+    font-size: 50px;
   }
 }
